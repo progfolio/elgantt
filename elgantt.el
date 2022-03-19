@@ -5,8 +5,7 @@
 ;; Author: Jeff Filipovits <jrfilipovits@gmail.com>
 ;; Url: https://github.com/legalnonsense/elgantt
 ;; Version: 0.0.2
-;; Package-Requires: ((emacs "26.1") (org "9.0") (s "1.12.0")
-;;                    (ts "0.2") (org-ql "0.5-pre") (dash "2.16.0"))
+;; Package-Requires: ((emacs "26.1") (org "9.0") (s "1.12.0") (ts "0.2") (org-ql "0.5-pre") (dash "2.16.0"))
 ;; Keywords: Org, agenda, calendar, outlines, gantt
 
 ;; This file is not part of GNU Emacs.
@@ -1209,7 +1208,8 @@ Returns nil if not on a header line."
 		     (concat
 		      "[[<]\\("
 		      date
-		      " ?[^]\n>]*?\\)[]>]\\|"
+		      " ?[^]
+\n>]*?\\)[]>]\\|"
 		      "\\(?:<[0-9]+-[0-9]+-[0-9]+[^>\n]+?\\+[0-9]+"
 		      "[dwmy]>\\)\\|\\(?:<%%\\(?:([^>\n]+)\\)>\\)")
 		   (org-re-timestamp type)) nil t)
